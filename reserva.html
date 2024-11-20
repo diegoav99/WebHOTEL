@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body style="background-color: lightblue;">
+    <form action="procesareserva.php">
+    <h1>Haga su reserva</h1>
+    <fieldset>
+        <legend>Datos Personales</legend>
+    <p>
+        <label for="nom">Nombre:</label>
+        <input id="nom" type="text" 
+        name="Nombre"
+        maxlength="100"
+        autofocus>
+    </p>
+    
+    <p>
+        <label for="ape">Apellidos</label>
+        <input id="ape" type="text" 
+        name="apellidos"
+        maxlength="100">
+    </p>
+    <p>
+        <label for="dni">DNI</label>
+        <input id="dni" type="dni" 
+        name="dni"
+        maxlength="10"
+        placeholder="DNI con letra">
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de su entrada</legend>
+    <p>
+        <label for="ind">Individual:</label>
+        <input type="radio" value="I"
+        chec id="ind" name="numero">
+        <label for="dob">Doble:</label>
+        <input type="radio" value="D"
+        check id="dob" name="numero">
+        <label for="tri">Triple:</label>
+        <input type="radio" value="T"
+        check id="tri" name="numero">
+    </p>
+    <p>
+        <label for="num">Número de personas</label>
+        <select name="num" id="num">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    <p>
+    <p>
+        <label for="mascota">Llevo mascotas</label>
+        <input type="checkbox" name="mascota"
+        id="mascota">
+    </p>
+    <p>
+        <label for="fecha-ent">Fecha de entrada</label>
+        <input type="date" name="fecha-ent" 
+        id="fecha-ent">
+    </p>
+    <p>
+        <label for="Hora-ent">Hora de entrada</label>
+        <input type="time" name="Hora-ent" 
+        id="Hora-ent">
+    </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar Formulario">
+    </p>
+</form>
+<a href="../index.html">Volver</a>
+</body>
+</html>
